@@ -8939,7 +8939,7 @@ LGraphNode.prototype.executeAction = function(action)
 							if( values.constructor === Array )
 								w.value = values[index];
 							else
-								w.value = index;
+								w.value = values_list[index];
 						} else { //combo clicked 
 							var text_values = values != values_list ? Object.values(values) : values;
 							var menu = new LiteGraph.ContextMenu(text_values, {
